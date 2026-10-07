@@ -3,14 +3,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     div.container {
-        width: 780px;
-        border: 5px solid red;
+        min-width: 390px;
+        max-width: 780px;
         margin: 0 auto;
         background-color: white;
 
         header {
             img {
-                display: block; 
+                display: block;
+                width: 100%;
             }
         }
 
@@ -22,7 +23,7 @@ body {
             background-position: bottom right;
 
             > nav {
-                text-align: right;
+                text-align: center;
                 font-size: 12px;
 
                 a {
@@ -58,83 +59,6 @@ body {
             padding: 20px 30px ;
             margin: 10px 0 100px;
             border-radius: 10px;
-
-            aside {
-
-                &.left {
-                    float: left;
-                    width: 30%;
-                    min-height: 500px;
-                    position: relative;
-
-                    nav {
-                        padding: 0 10px;
-
-                        a {
-                            display: block;
-                            border-bottom: 1px solid #76793E;
-                            color: #000;
-                            text-decoration: none;
-                            font-size: 12px;
-                            margin-left: 30px;
-                            padding:10px 0 5px 15px;
-
-                            &:hover {
-                                text-decoration: underline
-                            }
-                        }
-                    }
-
-                    div.links {
-                        margin-top: 40px;
-                        position: absolute;
-                        bottom: 0;
-                        top: 0;
-                    }
-
-                    .imgs {
-                        margin-top: 60px;
-                        margin-left: 15px;
-                    }
-                }
-                &.right {
-                    float: right;
-                    width: 60%;
-                    background-color: white;
-                    padding: 10px;
-
-                    img {
-                        width: 100%;
-                    }
-
-                    h1 {
-                        color: #505A2F;
-                        border-bottom: 2px dashed #A12D37;
-                        font-size: 16px;
-                        font-weight: normal;
-                        text-transform: uppercase;
-                    }
-
-                    p {
-                        font-size: 12px;
-                    }
-
-                    span {
-                        font-weight: bold;
-                        font-size: 105%;
-                    }
-
-                    p.link {
-                        text-align: right;
-
-                        a {
-                            color: red;
-                            text-transform: uppercase;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
         }
 
         footer {
@@ -144,5 +68,14 @@ body {
             font-size: 10px;
             padding: 10px 0;
         }
+
+        @media screen and (width > 600px) {
+            section.middle {
+                > nav {
+                    text-align: right;
+                }
+            }
+        }
     }
 }
+
