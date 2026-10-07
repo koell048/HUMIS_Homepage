@@ -1,0 +1,40 @@
+body {
+    background-color: #292827;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    section.container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 780px;
+
+        header {
+           img{
+               width: 100%;
+           }
+        }
+
+        section.middle {
+            display: flex;
+            flex-direction: column;
+            nav {
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: black;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        @media screen and (width >= 600px) {
+            nav.drop-down-menu {
+                display: none;
+            }
+        }
+    }
+}
