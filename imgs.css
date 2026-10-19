@@ -1,0 +1,20 @@
+main {
+    .pull {
+        display: inline;
+        margin-bottom: 5px;
+
+        img {
+            max-width: 200px;
+        }
+
+        &.right {
+            float: right;
+            margin-left: 1rem;
+        }
+
+        &.left {
+            float: left;
+            margin-right: 1rem;
+        }
+    }
+}
