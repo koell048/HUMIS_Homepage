@@ -8,8 +8,9 @@ body {
         background-color: white;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
         max-width: 780px;
+        min-height: 100vh;
+        justify-content: space-between;
 
         header {
             img {
@@ -18,6 +19,67 @@ body {
             }
         }
 
+        div.student-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav.student-links {
+           display: none;
+        }
+
+        div.student-info {
+            p {
+                font-size: 13px;
+            }
+        }
+
+        img.student-image {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        nav.contact-links {
+            .active2 {
+                font-weight: bold;
+            }
+
+            display: flex;
+            gap: 5px;
+            border-bottom: 2px solid #292827;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+
+            a {
+                color: #B42B36;
+                text-decoration: none;
+                font-size: 9px;
+                border-right: 1px solid #B42B36;
+                padding-right: 5px;
+
+                &:last-of-type {
+                    border-right: none;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        div.contact-options {
+            p {
+                text-align: left;
+                display: block;
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+        }
         section.middle {
             div.left-side {
                 display: none;
@@ -43,6 +105,14 @@ body {
                             width: 100%;
                         }
                     }
+                }
+
+                nav.drop-down-small {
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    background-color: #F3F3F4;
+                    padding: 20px 10px;
                 }
 
 
@@ -103,6 +173,22 @@ body {
             section.middle {
                 display: flex;
 
+                div.student-layout {
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+
+                nav.student-links {
+                    width: 30%;
+                    padding-right: 15px;
+                    border-right: 1px dotted #292827;
+                    min-height: 380px;
+                }
+
+                div.student-info {
+                    width: 70%;
+                }
+
                 div.left-side {
                     display: flex;
                     flex-direction: column;
@@ -153,6 +239,31 @@ body {
 
                     nav.drop-down-menu {
                         display: none;
+                    }
+
+                    nav.drop-down-small {
+                        display: none;
+                    }
+
+                    nav.student-links {
+                        display: flex;
+                        flex-direction: column;
+
+                        a {
+                            color: #000;
+                            text-decoration: none;
+                            font-size: 12px;
+                            margin-bottom: 4px;
+
+                            &.bold-student-links {
+                                font-weight: bold;
+                                margin-top: 10px;
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
                     }
 
                     main {

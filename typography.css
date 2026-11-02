@@ -14,7 +14,10 @@ main {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+        border-bottom: 8px solid #B42B36;
+        line-height: 1.35rem;
+        padding-bottom: 0;
     }
 
     h2 {
@@ -37,5 +40,8 @@ main {
 
     h6 {
         font-size: 0.875rem;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 0;
     }
 }
