@@ -23,63 +23,29 @@ body {
             display: flex;
             flex-direction: column;
             gap: 20px;
-        }
 
-        nav.student-links {
-           display: none;
-        }
-
-        div.student-info {
-            p {
-                font-size: 13px;
-            }
-        }
-
-        img.student-image {
-            width: 100%;
-            display: block;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        nav.contact-links {
-            .active2 {
-                font-weight: bold;
+            nav.student-links {
+                display: none;
             }
 
-            display: flex;
-            gap: 5px;
-            border-bottom: 2px solid #292827;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            margin-top: 15px;
-
-            a {
-                color: #B42B36;
-                text-decoration: none;
-                font-size: 9px;
-                border-right: 1px solid #B42B36;
-                padding-right: 5px;
-
-                &:last-of-type {
-                    border-right: none;
+            div.student-info {
+                p {
+                    font-size: 13px;
                 }
 
-                &:hover {
-                    text-decoration: underline;
+                img.student-image {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
                 }
             }
+
+
         }
 
-        div.contact-options {
-            p {
-                text-align: left;
-                display: block;
-                margin-top: 0;
-                margin-bottom: 10px;
-                font-size: 12px;
-            }
-        }
+
+
         section.middle {
             div.left-side {
                 display: none;
@@ -90,6 +56,71 @@ body {
                 flex-direction: column;
                 height: 100%;
                 padding: 5px 30px 30px 30px;
+
+                nav.contact-links {
+                    .active2 {
+                        font-weight: bold;
+                    }
+
+                    display: flex;
+                    gap: 5px;
+                    border-bottom: 2px solid #292827;
+                    padding-bottom: 5px;
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+
+                    a {
+                        color: #B42B36;
+                        text-decoration: none;
+                        font-size: 9px;
+                        border-right: 1px solid #B42B36;
+                        padding-right: 5px;
+
+                        &:last-of-type {
+                            border-right: none;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                div.contact-options {
+                    p {
+                        text-align: left;
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                        font-size: 12px;
+                    }
+                }
+
+                div.fa-layout {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    nav.friends-links {
+                        display: none;
+                        a {
+                            color: #000;
+                            text-decoration: none;
+                            font-size: 12px;
+                            margin-bottom: 4px;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    div.friends-info {
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
 
                 nav.drop-down-menu {
                     display: flex;
@@ -173,21 +204,6 @@ body {
             section.middle {
                 display: flex;
 
-                div.student-layout {
-                    flex-direction: row;
-                    align-items: flex-start;
-                }
-
-                nav.student-links {
-                    width: 30%;
-                    padding-right: 15px;
-                    border-right: 1px dotted #292827;
-                    min-height: 380px;
-                }
-
-                div.student-info {
-                    width: 70%;
-                }
 
                 div.left-side {
                     display: flex;
@@ -232,6 +248,41 @@ body {
                 }
                 section.inner {
                     width: 70%;
+
+                    div.student-layout {
+                        flex-direction: row;
+                        align-items: flex-start;
+
+                        nav.student-links {
+                            width: 30%;
+                            padding-right: 15px;
+                            border-right: 1px dotted #292827;
+                            min-height: 380px;
+                        }
+
+                        div.student-info {
+                            width: 70%;
+                        }
+                    }
+
+                    div.fa-layout {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+                        margin-top: 20px;
+
+                        nav.friends-links {
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
+                            padding-right: 15px;
+                            border-right: 1px dotted #292827;
+                        }
+
+                        div.friends-info {
+                            width: 70%;
+                        }
+                    }
 
                     nav.minor {
                         justify-content: flex-end;
